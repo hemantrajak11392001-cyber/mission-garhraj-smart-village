@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mission Garhraj Smart Village — नाहरमऊ गांव के विकास, स्वच्छ पानी, सड़क, शिक्षा, स्वास्थ्य और सामुदायिक भागीदारी की पहल।">
+<title>Mission Garhraj Smart Village | नाहरमऊ</title>
+<style>
+:root{--green:#075c3d;--green2:#13814e;--lime:#d9f99d;--ink:#172b25;--muted:#60716a;--cream:#f5faf6;--line:#dce8df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#ffffffee;backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{display:flex;align-items:center;gap:10px;font-weight:850;color:var(--green);font-size:1.04rem;line-height:1.15}.brand-mark{font-size:2rem}.brand small{display:block;color:var(--muted);font-size:.7rem;font-weight:600;margin-top:4px}.navlinks{display:flex;gap:19px;align-items:center;font-size:.9rem}.navlinks a:hover{color:var(--green2)}.menu{display:none}.lang-toggle{border:1px solid var(--line);background:#fff;color:var(--green);padding:8px 12px;border-radius:999px;font-weight:800;cursor:pointer}.doc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.doc{border:1px solid var(--line);border-radius:16px;padding:20px;background:#fff}.doc h3{margin:7px 0}.doc p{font-size:.92rem;color:var(--muted)}.doc a{color:var(--green);font-weight:800}.status-tag{display:inline-block;background:#e6f5e9;color:#075c3d;border-radius:99px;padding:4px 9px;font-size:.78rem;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:white;padding:11px 18px;border-radius:999px;font-weight:750;border:0;cursor:pointer}.btn:hover{background:var(--green2)}.btn.light{background:white;color:var(--green);border:1px solid var(--line)}
+.hero{color:white;background:linear-gradient(90deg,rgba(4,38,31,.94),rgba(4,38,31,.68) 48%,rgba(4,38,31,.14)),linear-gradient(135deg,#2b6a4a,#93b87c);min-height:440px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-30px;bottom:-70px;width:54%;height:90%;border-radius:50% 50% 0 0;background:linear-gradient(145deg,#91b878,#245f43 65%,#143f30);opacity:.7;transform:rotate(-8deg)}
+.hero-inner{position:relative;z-index:1;padding:65px 0;max-width:720px}.eyebrow{font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);font-size:.83rem}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.03;margin:12px 0 18px;letter-spacing:-.04em}.hero h1 span{color:var(--lime)}.hero p{max-width:610px;font-size:1.08rem;color:#f0f7f1}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.location-chip{display:inline-block;margin-top:22px;padding:8px 12px;border:1px solid #ffffff55;background:#ffffff15;border-radius:10px;font-size:.9rem}
+section{padding:65px 0}.section-head{max-width:720px;margin-bottom:30px}.section-head h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin:0 0 10px;color:var(--green)}.section-head p{color:var(--muted);margin:0}.priorities{background:var(--cream)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.tile{padding:22px 18px;background:white;border:1px solid var(--line);border-radius:18px;box-shadow:0 6px 20px #153e2710}.tile .emoji{font-size:1.8rem}.tile h3{margin:10px 0 5px;font-size:1.05rem}.tile p{margin:0;color:var(--muted);font-size:.92rem}.split{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}.panel{background:#f0f8f1;border-radius:22px;padding:28px}.panel h3{font-size:1.4rem;margin:0 0 12px;color:var(--green)}.steps{display:grid;gap:13px}.step{display:flex;gap:14px;padding:16px;border:1px solid var(--line);border-radius:14px}.number{display:grid;place-items:center;flex:0 0 38px;height:38px;border-radius:50%;background:#d9f3df;color:var(--green);font-weight:850}.step h3{margin:0 0 3px;font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.92rem}.notice{padding:15px 18px;border-left:4px solid #e2ad39;background:#fff8e8;border-radius:8px;color:#654c16;font-size:.9rem;margin-top:18px}
+.updates{background:#f7faf8}.update-list{display:grid;gap:12px}.update{background:#fff;border:1px solid var(--line);padding:18px;border-radius:14px}.update b{display:block;color:var(--green)}.update span{font-size:.9rem;color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}.contact-card{background:var(--green);color:white;border-radius:22px;padding:28px}.contact-card h3{font-size:1.5rem;margin-top:0}.contact-card p{color:#e0f1e7}.contact-card .small{font-size:.88rem;color:#d0e7d8}.form{border:1px solid var(--line);padding:25px;border-radius:22px}.form label{display:block;font-weight:700;font-size:.9rem;margin:12px 0 5px}.form input,.form select,.form textarea{width:100%;padding:12px;border:1px solid #cbd8cf;border-radius:10px;font:inherit;background:white}.form textarea{min-height:110px;resize:vertical}.form button{margin-top:15px;width:100%}
+footer{background:#10251e;color:#eaf4ed;padding:28px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-row p{margin:3px 0;color:#c5d7cb;font-size:.85rem}.footlinks{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem}
+@media(max-width:850px){.doc-grid{grid-template-columns:1fr}.navlinks{display:none}.menu{display:inline-flex}.grid{grid-template-columns:repeat(2,1fr)}.split,.contact-grid{grid-template-columns:1fr}.hero:after{width:75%;opacity:.3}.hero-inner{padding:52px 0}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.nav{padding:10px 0}.hero{min-height:400px}.hero h1{font-size:2.7rem}.hero-inner{padding:45px 0}section{padding:48px 0}.brand-mark{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="brand-mark">🌿</span><span>Mission Garhraj<br>Smart Village<small>सशक्त गाँव • बेहतर भविष्य</small></span></a>
+<nav class="navlinks" aria-label="मुख्य मेन्यू"><a href="#about">परिचय</a><a href="#priorities">प्राथमिकताएँ</a><a href="#plan">विकास योजना</a><a href="#documents">दस्तावेज़</a><a href="#updates">अपडेट</a><a href="#contact">संपर्क</a></nav>
+<div style="display:flex;gap:8px;align-items:center"><button class="lang-toggle" id="langToggle" type="button">EN</button><a class="btn menu" href="#contact">सुझाव दें ↓</a></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+<div class="eyebrow" data-hi="नाहरमऊ • तहसील केसली • जिला सागर, मध्य प्रदेश" data-en="Naharmau • Kesli Tehsil • Sagar District, Madhya Pradesh">नाहरमऊ • तहसील केसली • जिला सागर, मध्य प्रदेश</div>
+<h1 data-hi="Mission Garhraj" data-en="Mission Garhraj">Mission Garhraj<br><span>Smart Village</span></h1>
+<p>“सशक्त गाँव, समृद्ध भविष्य” — नाहरमऊ के विकास की प्राथमिकताओं, जन-सुझावों और योजनाओं को एक जगह लाने की सामुदायिक पहल।</p>
+<div class="hero-actions"><a class="btn" href="#priorities">हमारी प्राथमिकताएँ ↓</a><a class="btn light" href="#contact">अपना सुझाव दें</a></div>
+<div class="location-chip">📍 नाहरमऊ, केसली, सागर (म.प्र.)</div>
+</div></section>
+<section id="about"><div class="wrap split">
+<div class="section-head"><h2>हमारा सपना, हमारा गाँव</h2><p>ऐसा गाँव जहाँ हर परिवार को सुरक्षित पेयजल, अच्छी सड़कें, शिक्षा, स्वास्थ्य और बेहतर अवसर मिलें। विकास की शुरुआत स्थानीय ज़रूरतों को समझने, तथ्य जुटाने और संबंधित विभागों तक प्रस्ताव पहुँचाने से होगी।</p><p style="margin-top:16px"><b>हमारा सिद्धांत:</b> पहले सर्वे, फिर प्राथमिकता, फिर पारदर्शी योजना और आधिकारिक प्रक्रिया।</p></div>
+<div class="panel"><h3>पहली प्राथमिकता: पानी 💧</h3><p>गर्मी में कुओं और हैंडपंपों का जलस्तर कम होने तथा दूर से पानी लाने की समस्या की जानकारी जुटाकर तकनीकी सर्वे और स्थायी समाधान की माँग करना।</p><a class="btn" href="#plan">प्रस्तावित अगले कदम</a></div>
+</div></section>
+<section class="priorities" id="priorities"><div class="wrap">
+<div class="section-head"><h2>गाँव के विकास की प्राथमिकताएँ</h2><p>ये प्रस्तावित लक्ष्य हैं; इन्हें सर्वे, उपलब्ध संसाधनों और सरकारी स्वीकृति के अनुसार आगे बढ़ाया जाएगा।</p></div>
+<div class="grid">
+<article class="tile"><div class="emoji">💧</div><h3>स्वच्छ पेयजल</h3><p>जल स्रोतों का सर्वे, जलस्तर जाँच और टिकाऊ जलापूर्ति योजना।</p></article>
+<article class="tile"><div class="emoji">🛣️</div><h3>बेहतर सड़कें</h3><p>गाँव की सड़कों और गलियों की स्थिति का रिकॉर्ड व मरम्मत प्रस्ताव।</p></article>
+<article class="tile"><div class="emoji">💡</div><h3>स्ट्रीट लाइट</h3><p>अँधेरी गलियों की सूची और ऊर्जा-कुशल प्रकाश व्यवस्था का प्रस्ताव।</p></article>
+<article class="tile"><div class="emoji">🏥</div><h3>स्वास्थ्य सुविधा</h3><p>स्वास्थ्य शिविर, प्राथमिक सेवाओं और रेफरल व्यवस्था की जानकारी।</p></article>
+<article class="tile"><div class="emoji">📚</div><h3>शिक्षा</h3><p>स्कूल सुविधाएँ, डिजिटल शिक्षा और आगे की पढ़ाई के अवसर।</p></article>
+<article class="tile"><div class="emoji">📹</div><h3>सुरक्षा</h3><p>ज़रूरत, सहमति, रखरखाव और गोपनीयता को ध्यान में रखकर सुरक्षा उपाय।</p></article>
+<article class="tile"><div class="emoji">🌳</div><h3>गढ़राज/गडराज पहाड़ी</h3><p>वन एवं भूमि नियमों के अधीन प्रकृति-संरक्षण और पर्यटन की व्यवहार्यता जाँच।</p></article>
+<article class="tile"><div class="emoji">🌱</div><h3>रोज़गार व आत्मनिर्भरता</h3><p>कौशल, स्थानीय उद्यम, खेती और सरकारी योजनाओं की जानकारी।</p></article>
+</div></div></section>
+<section id="plan"><div class="wrap">
+<div class="section-head"><h2>शुरुआत कैसे होगी?</h2><p>कम खर्च में व्यवस्थित तरीके से आगे बढ़ने के लिए शुरुआती कार्ययोजना।</p></div>
+<div class="split"><div class="steps">
+<div class="step"><div class="number">1</div><div><h3>समस्या और प्रमाण जुटाएँ</h3><p>पानी की उपलब्धता, सूखते कुएँ/हैंडपंप, प्रभावित परिवार और गर्मियों की स्थिति का सर्वे।</p></div></div>
+<div class="step"><div class="number">2</div><div><h3>स्थल निरीक्षण व तकनीकी सलाह</h3><p>लोक स्वास्थ्य यांत्रिकी विभाग (PHE) और संबंधित पंचायत/जनपद/जिला कार्यालय से निरीक्षण का अनुरोध।</p></div></div>
+<div class="step"><div class="number">3</div><div><h3>लिखित आवेदन व प्राप्ति</h3><p>संबंधित विभाग और कलेक्टर कार्यालय में आवेदन जमा कर प्राप्ति/डायरी नंबर सुरक्षित रखें।</p></div></div>
+<div class="step"><div class="number">4</div><div><h3>स्थिति सार्वजनिक रूप से अपडेट करें</h3><p>केवल सत्यापित तारीख, आवेदन स्थिति और आधिकारिक जवाब प्रकाशित करें; निजी जानकारी साझा न करें।</p></div></div>
+</div><div class="panel"><h3>पारदर्शिता और भरोसा</h3><p>यह वेबसाइट एक सामुदायिक सूचना-पृष्ठ का प्रारूप है। यह किसी सरकारी विभाग की आधिकारिक वेबसाइट नहीं है और न ही किसी स्वीकृति या फंडिंग का दावा करती है।</p><div class="notice">महत्वपूर्ण: पहाड़ी के आसपास वन भूमि होने की जानकारी की आधिकारिक पुष्टि और आवश्यक अनुमतियों के बिना निर्माण या पर्यटन परियोजना का वादा न करें।</div></div></div>
+</div></section>
+<section id="documents"><div class="wrap">
+<div class="section-head"><h2>सरकारी आवेदन और प्रोजेक्ट दस्तावेज़</h2><p>Government Applications & Project Documents — नीचे दस्तावेज़ों की सूची और उपयोग दिया गया है। वास्तविक आवेदन भेजने से पहले तथ्य, तारीख, हस्ताक्षर और संलग्नक जाँचें।</p></div>
+<div class="doc-grid">
+<article class="doc"><div class="emoji">💧</div><h3>पेयजल समस्या आवेदन</h3><p>Application for drinking-water survey and sustainable water supply. PHE विभाग और जिला प्रशासन के लिए ड्राफ्ट तैयार करने का आधार।</p><span class="status-tag">Draft / प्रारूप</span><p><a href="#contact">ड्राफ्ट के लिए अनुरोध ↓</a></p></article>
+<article class="doc"><div class="emoji">📋</div><h3>गाँव विकास मास्टर प्लान</h3><p>Village development priorities, proposed phases, departments, survey needs and estimated-cost placeholders.</p><span class="status-tag">Planning / योजना</span><p><a href="#contact">सुझाव साझा करें ↓</a></p></article>
+<article class="doc"><div class="emoji">🧾</div><h3>आवेदन ट्रैकर</h3><p>Record submission date, office, receipt/diary number, status and next follow-up date. Never publish personal IDs.</p><span class="status-tag">Template / नमूना</span><p><a href="#contact">स्थिति अपडेट करें ↓</a></p></article>
+</div><div class="notice">यह वेबसाइट सरकारी पोर्टल नहीं है। यहाँ अभी कोई सरकारी आवेदन जमा नहीं होता। आवेदन की स्थिति तभी “जमा” या “स्वीकृत” लिखें जब उसका प्रमाण उपलब्ध हो।</div>
+</div></section>
+<section class="updates" id="updates"><div class="wrap">
+<div class="section-head"><h2>समाचार और प्रगति</h2><p>यहाँ केवल वास्तविक और सत्यापित अपडेट प्रकाशित करें। नीचे शुरुआती वेबसाइट के लिए नमूना स्थिति दी गई है।</p></div>
+<div class="update-list">
+<div class="update"><b>पेयजल समस्या का दस्तावेज़ीकरण</b><span>स्थिति: सर्वे और प्रमाण जुटाने का प्रस्ताव — आधिकारिक आवेदन जमा होने की पुष्टि नहीं।</span></div>
+<div class="update"><b>गाँव की प्राथमिकताओं की सूची</b><span>स्थिति: प्रारंभिक प्रस्ताव — ग्रामीणों से सुझाव लेकर संशोधित किया जाना है।</span></div>
+<div class="update"><b>गढ़राज/गडराज पहाड़ी</b><span>स्थिति: संभावित प्रकृति-पर्यटन विचार — भूमि की स्थिति और अनुमतियों की जाँच आवश्यक।</span></div>
+</div></div></section>
+<section id="contact"><div class="wrap">
+<div class="section-head"><h2>अपना सुझाव साझा करें</h2><p>गाँव की ज़रूरत, समस्या या सुधार का सुझाव लिखें। यह शुरुआती डेमो है; अभी संदेश किसी सर्वर पर जमा नहीं होते।</p></div>
+<div class="contact-grid">
+<div class="contact-card"><h3>मिलकर गाँव बदलें</h3><p>नाहरमऊ, तहसील केसली, जिला सागर, मध्य प्रदेश</p><p>आपकी जानकारी से प्राथमिकताएँ समझने में मदद मिल सकती है। कृपया आधार नंबर, बैंक विवरण या अन्य संवेदनशील जानकारी न लिखें।</p><p class="small">ईमेल/फोन अभी जोड़े नहीं गए हैं। प्रकाशित करने से पहले सत्यापित संपर्क विवरण जोड़ें।</p></div>
+<form class="form" id="suggestionForm"><label for="name">आपका नाम (वैकल्पिक)</label><input id="name" name="name" placeholder="नाम लिखें"><label for="topic">सुझाव किस विषय पर है?</label><select id="topic" name="topic"><option>पेयजल</option><option>सड़क</option><option>स्ट्रीट लाइट</option><option>स्वास्थ्य</option><option>शिक्षा</option><option>सुरक्षा</option><option>पर्यटन / पर्यावरण</option><option>अन्य</option></select><label for="message">समस्या या सुझाव</label><textarea id="message" name="message" required placeholder="जगह, समस्या और सुझाया गया समाधान लिखें…"></textarea><button class="btn" type="submit">सुझाव तैयार करें</button><p id="formStatus" role="status" aria-live="polite" class="small"></p></form>
+</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><b>🌿 Mission Garhraj Smart Village</b><p>सशक्त गाँव • समृद्ध भविष्य</p></div><nav class="footlinks"><a href="#home">होम</a><a href="#priorities">प्राथमिकताएँ</a><a href="#plan">कार्ययोजना</a><a href="#documents">दस्तावेज़</a><a href="#contact">संपर्क</a></nav><p>© <span id="year"></span> • सामुदायिक पहल का प्रारूप</p></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+let english=false;
+document.getElementById('langToggle').addEventListener('click',function(){
+ english=!english; this.textContent=english?'हिं':'EN';
+ document.documentElement.lang=english?'en':'hi';
+ document.querySelectorAll('[data-hi][data-en]').forEach(el=>{el.textContent=english?el.dataset.en:el.dataset.hi;});
+});
+document.getElementById('suggestionForm').addEventListener('submit',function(e){e.preventDefault();const n=document.getElementById('name').value.trim()||'नाम नहीं दिया';const t=document.getElementById('topic').value;const m=document.getElementById('message').value.trim();const text=`Mission Garhraj Smart Village — सुझाव\\nनाम: ${n}\\nविषय: ${t}\\nसुझाव: ${m}`;const status=document.getElementById('formStatus');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(()=>status.textContent='सुझाव का टेक्स्ट कॉपी हो गया है। इसे WhatsApp या ईमेल में भेज सकते हैं।').catch(()=>{status.textContent=text;});}else{status.textContent=text;}});
+</script>
+</body>
+</html>
